@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TMWSystems.Models.UI.INPCHelper;
+
 
 namespace TestablePattern.Models
 {
-	public class FooBar:NotifyObject
+	public class FooBar:NotifyObject.NotifyObject
 	{
 
 		public string Name

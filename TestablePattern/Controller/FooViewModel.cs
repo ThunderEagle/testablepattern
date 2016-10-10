@@ -5,11 +5,10 @@ using System.Linq;
 using CommonDialogs;
 using TestablePattern.Models;
 using SystemWrappers;
-using TMWSystems.Models.UI.Base;
 
 namespace TestablePattern.Controller
 {
-	public class FooViewModel:ObservableBase
+	public class FooViewModel:NotifyObject.NotifyObject
 	{
 		private readonly IMessageBoxService _messageBox;
 		private readonly ISaveFileService _saveFileService;

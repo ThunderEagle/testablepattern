@@ -51,18 +51,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="TMWSystems.DAL.Pioneer, Version=16.40.32.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\SVN\Operations\OpsUIUnitTest\BranchData\TMWAssemblies\TMWSystems.DAL.Pioneer.dll</HintPath>
-    </Reference>
-    <Reference Include="TMWSystems.Models.UI, Version=16.40.23.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\SVN\Operations\OpsUIUnitTest\BranchData\TMWAssemblies\TMWSystems.Models.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="TMWUtility, Version=16.40.23.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\SVN\Operations\OpsUIUnitTest\BranchData\TMWAssemblies\TMWUtility.dll</HintPath>
-    </Reference>
     <Reference Include="UIAutomationProvider" />
     <Reference Include="UIAutomationTypes" />
     <Reference Include="WindowsBase" />
@@ -112,9 +100,17 @@
       <Project>{d02e3bd4-a4e2-42c6-b356-0af8c29d1be0}</Project>
       <Name>CommonDialogs</Name>
     </ProjectReference>
+    <ProjectReference Include="..\NotifyObject\NotifyObject.csproj">
+      <Project>{97f52db2-3b78-4e41-bdd8-e48e95273155}</Project>
+      <Name>NotifyObject</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SystemWrappers\SystemWrappers.csproj">
       <Project>{02859844-fb2d-4fb8-b1f3-68888a9869c7}</Project>
       <Name>SystemWrappers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeakEvent\WeakEvent.vbproj">
+      <Project>{D1FE5250-7FF9-4E7F-A0E8-23C9F18B72FD}</Project>
+      <Name>WeakEvent</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

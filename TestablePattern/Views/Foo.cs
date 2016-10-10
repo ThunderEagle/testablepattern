@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using TestablePattern.Controller;
-using TMWSystems.Utility;
+using WeakEvent;
 
 namespace TestablePattern.Views
 {
