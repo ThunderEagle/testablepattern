@@ -13,14 +13,13 @@ namespace TestablePattern.Controller
 		private readonly IMessageBoxService _messageBox;
 		private readonly ISaveFileService _saveFileService;
 		private readonly IFile _file;
-		//private readonly FileImplementation _concreteFile;
+		
 
 		public FooViewModel(IMessageBoxService messageBoxService, ISaveFileService saveFileService, IFile file)
 		{
 			_saveFileService = saveFileService;
 			_messageBox = messageBoxService;
 			_file = file;
-			//_concreteFile = (FileImplementation)file;
 		}
 
 
@@ -94,7 +93,6 @@ namespace TestablePattern.Controller
 
 		public void DisplayMessage(object sender, EventArgs e)
 		{
-			//_messageBox.Show("A Message from the view model","caption",Global.Dialogs.GenericDialogIcons.None);
 			_messageBox.ShowInformation("A Message from the view model");
 		}
 
@@ -143,7 +141,6 @@ namespace TestablePattern.Controller
 
 		private FooBar GenerateFooBar()
 		{
-			//Console.WriteLine(_rnd.Next(0, 1));
 			return new FooBar
 			{
 				Amount = _rnd.NextDouble() * 1000,
